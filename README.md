@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+## Описание
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Существует API эндпоинт 
 
-Currently, two official plugins are available:
+API эндпоинт возвращает список образовательных курсов платформы. Каждый курс имеет “тэги”, темы к которым этот курс относится. Например курс шахматы относится к темам “Головоломки”, “Шахматы” и “Логика и мышление”. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ваша задача разработать простую страницу, согласно макету, которая выводит список курсов и позволяет отфильтровать курсы по выбранной теме(tags). Весь контент, включая список тем должен формироваться динамически исходя из ответа от бэкэнда.
 
-## Expanding the ESLint configuration
+Дизайн согласно макету
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Поведение на разных разрешениях экрана показано в виде отдельного фрейма. Блок с “тэгами” является фиксированным по ширине. Блок справа занимает все оставшееся место. В одной строчке выводится ровно 3 курса, которые делят между собой доступное место.
 
-- Configure the top-level `parserOptions` property like this:
+## Deploy
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Деплой в разделе Production
