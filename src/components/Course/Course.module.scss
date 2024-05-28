@@ -1,0 +1,29 @@
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 18px;
+  width: auto;
+
+  box-shadow: 0 10px 13px -4px rgba(35, 35, 95, 0.19);
+
+
+  img {
+    align-self: center;
+    width: 21rem;
+    height: 21rem;
+    border-radius: 18px;
+  }
+
+  span {
+    background: #fff;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: 12px 18px 18px 18px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 100%;
+
+  }
+}
